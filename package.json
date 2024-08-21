@@ -1,0 +1,46 @@
+{
+	"name": "pepelac",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev --host",
+		"build": "vite build",
+		"lint:script": "eslint --ext .ts,.js --ignore-path .gitignore .",
+		"lint:style": "stylelint src/styles/**/*.{css,scss}"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx}": "eslint --fix",
+		"*.{css,scss}": "stylelint --fix"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.15",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0",
+		"@vituum/vite-plugin-twig": "^1.1.0",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"postcss": "^8.4.41",
+		"prettier": "^3.3.3",
+		"prettier-eslint": "^15.0.1",
+		"sass": "^1.77.8",
+		"stylelint": "^15.11.0",
+		"stylelint-config-clean-order": "^5.4.2",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-standard": "^33.0.0",
+		"stylelint-config-standard-scss": "^10.0.0",
+		"stylelint-config-twbs-bootstrap": "^11.0.1",
+		"stylelint-order": "^6.0.4",
+		"stylelint-scss": "^5.3.2",
+		"tailwindcss": "^3.4.10",
+		"typescript": "^5.5.4",
+		"vite": "^5.4.1",
+		"vituum": "^1.1.1"
+	},
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"aos": "3.0.0-beta.6"
+	}
+}

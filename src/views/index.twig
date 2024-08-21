@@ -1,0 +1,337 @@
+{% extends "templates/layouts/base.twig" %}
+
+{% set title = "Ярослав и Инна" %}
+
+{% block page %}
+  <audio
+    src="/src/assets/audio/background.mp3"
+    type="audio/midi"
+    hidden
+    autoplay
+    loop>
+  </audio>
+  <section
+    data-aos="fade-up"
+    style="background: url('/src/assets/img/sky.png') center top/cover"
+    class="max-w-lg mx-auto px-4 pb-12 h-[387px] flex flex-col">
+    <div class="flex justify-center mt-auto">
+      <img src="/src/assets/img/handsnhearts.png" alt="">
+    </div>
+  </section>
+  <section
+    data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"
+    class="max-w-lg mx-auto px-4 flex flex-col"
+    style="background: url('/src/assets/img/lines.png') center top/cover">
+    <div class="flex flex-col items-center">
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="text-4xl font-bad-script pt-12 pb-8">
+        Ярослав и Инна
+      </h1>
+      <h2 class="text-base font-bad-script">
+        МЫ ЖЕНИМСЯ!
+      </h2>
+      <p class="text-xs mt-4 uppercase">
+        И БУДЕМ СЧАСТЛИВЫ РАЗДЕЛИТЬ<br>РАДОСТЬ ЭТОГО<br>ДНЯ ВМЕСТЕ С ВАМИ
+      </p>
+      <div class="flex items-center justify-evenly italic text-xl w-full mt-4">
+        <span class="flex items-center flex-col after:h-0.5 after:w-[61px] after:bg-black">Октябрь</span>
+        <span class="text-6xl">01</span>
+        <span class="flex items-center flex-col after:h-0.5 after:w-[61px] after:bg-black">2024</span>
+      </div>
+      <div class="grid grid-cols-1 w-full py-8">
+        <div class="col-span-1 text-center">Ждем вас через:</div>
+        <div class="col-span-1">
+          <div class="flex justify-evenly w-full">
+            <div class="flex flex-col">
+              <span id="timer-days" class="text-[40px]">0</span>
+              <span class="text-xl">дней</span>
+            </div>
+            <div class="flex flex-col">
+              <span id="timer-hours" class="text-[40px]">0</span>
+              <span class="text-xl">часов</span>
+            </div>
+            <div class="flex flex-col">
+              <span id="timer-minutes" class="text-[40px]">0</span>
+              <span class="text-xl">минут</span>
+            </div>
+            <div class="flex flex-col">
+              <span id="timer-seconds" class="text-[40px]">0</span>
+              <span class="text-xl">секунд</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-lg mx-auto px-4 flex flex-col py-24">
+    <div class="flex flex-col font-bad-script text-xl">
+      <p class="text-left">Черным по белому...</p>
+      <div class="container px-12 py-12 pl-24">
+        <img src="/src/assets/img/blot.png" alt="">
+      </div>
+      <p class="text-right">...пишутся строки любви</p>
+    </div>
+  </section>
+  <section class="max-w-lg mx-auto px-4 flex flex-col">
+    <div class="flex flex-col text-center">
+      <h2 class="text-2xl">Здравствуй, дорогой читатель!</h2>
+      <p class="mt-8">С огромной радостью приглашаем тебя на наш свадебный день 1 октября 2024 года. Этот день станет
+        началом новой,
+        прекрасной истории, и мы хотим разделить его с тобой. Пусть каждый момент будет наполнен радостью, светом и
+        теплом. С нетерпением ждем нашей встречи и создания вместе незабываемых мгновений!</p>
+    </div>
+    <div class="grid grid-cols-2 gap-5 font-bad-script my-16">
+      <div class="col-span-1">
+        <p>***<br>Черным по белому – в этом сочетании заключена ясность и истина, как основа великой любви. Мы пишем
+          черным по
+          белому, и чернила не омрачают чистоту белого листа, а лишь придают ему глубокий смысл. Как инь и янь, они
+          создают гармонию, будь то в поэзии, прозе, любви или самой жизни. Черное и белое танцуют вместе в этом
+          прекрасном балете, превращая простоту в полноту, а контрасты – в единство.</p>
+      </div>
+      <div class="col-span-1 flex">
+        <img class="m-auto w-full" src="/src/assets/img/fish_.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section
+    class="max-w-lg mx-auto px-4 flex flex-col"
+    style="background: url('/src/assets/img/flowerbg_l.png') left center no-repeat">
+    <div class="flex flex-col text-center">
+      <h2 class="text-3xl not-italic my-8">Пролог<br><br>Глава 1: Место встречи</h2>
+      <div class="grid grid-cols-6">
+        <div class="font-bad-script col-start-3 col-span-4">
+          <p>
+            ***<br>
+            В том пространстве, где воздух прозрачен и легок,<br>
+            Ослепляюще светит нам сотней фрагментов<br>
+            В этом месте мечты обретают полёт,<br>
+            Наполняя жизнь эхом счастливых моментов.
+          </p>
+        </div>
+      </div>
+      <div class="my-10">
+        <p>Пространство «Воздух» — это уголок, где границы между реальностью и мечтой стираются. Представьте себе
+          последний этаж, где белоснежные стены и полы, словно под облаками, отражают свет и создают ощущение
+          невесомости. Это пространство, как чистый холст, готово быть наполненным светом и эмоциями.</p>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <div class="col-span-6 flex px-9">
+          <img src="/src/assets/img/vozdukh.png" class="w-64 h-auto" alt="">
+          <span class="text-center ml-3"
+                style="text-orientation: mixed;writing-mode: vertical-rl">Пространство воздух</span>
+        </div>
+        <div class="col-span-6 bg-neutral-300"></div>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="col-span-1"></div>
+        <div class="col-span-1">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac88783a6e7610dc3e8c689534887c47e53b2855e45dd9a3a6ea2a0236aec1862&amp;source=constructor"
+            width="100%" height="300" frameborder="0"></iframe>
+          <div class="mt-4">
+            ул. Кубанская Набережная, 192, Центральный внутригородской округ, микрорайон Центральный, Краснодар (этаж 4)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="max-w-lg mx-auto px-4 flex flex-col"
+    style="background: url('/src/assets/img/flowerbg_r.png') right center no-repeat"
+  >
+    <div class="flex flex-col text-center">
+      <h2 class="text-3xl not-italic py-14">Глава 2: Белое на белом</h2>
+      <div class="grid grid-cols-6">
+        <div class="col-span-6 font-bad-script">
+          <h2>***</h2>
+          <p>
+            ...Белое противоположно черному. И<br> противоположно грязи. Белый цвет - цвет света,<br> чистоты. Ангелы
+            одеты в
+            белые одежды. В белое<br> платье одевались девственницы-весталки, невеста<br> выходит замуж в белом, на
+            белые
+            пеленки<br> кладут младенца, белую чалму надевают<br> мудрецы. Яйцо белое, - это символ жизни. И<br>
+            материнское молоко,
+            которым вскармливают<br> младенца, тоже белое. Белый цвет отталкивает<br> грязь и мерзость, сохраняет покой
+            и
+            защищает<br> от темной энергии...
+          </p>
+        </div>
+      </div>
+      <div class="text-sm mt-8">
+        <p>Наша свадебная вечеринка будет проходить в белом стиле, где каждый штрих и деталь наполнятся светом и
+          чистотой. В этот особенный вечер белый цвет станет символом нового начала, чистоты сердца и бесконечных
+          возможностей. Пусть этот вечер станет праздником чистоты и вдохновения, где каждый момент будет пропитан
+          светом и гармонией, отражая дух нового начала и единства.</p>
+      </div>
+      <div class="grid grid-cols-2 mt-4">
+        <div class="col-span-1 ">
+          <div class="bg-neutral-300 aspect-square"></div>
+        </div>
+        <div class="text-xs col-span-1 flex justify-center items-center px-8">
+          <p>Мы просим вас следовать специальному дресс-коду, чтобы каждый элемент этого праздника олицетворял гармонию
+            и элегантность. В белоснежной атмосфере, словно в облаках, ваши улыбки и радость будут сиять особенно ярко,
+            словно звезды в ночном небесном просторе.</p>
+        </div>
+      </div>
+      <div class="flex justify-around py-12">
+        <div class="rounded-full shadow-2xl bg-white w-16 aspect-square"></div>
+        <div class="rounded-full shadow-2xl bg-[#EFEFEF] w-16 aspect-square"></div>
+        <div class="rounded-full shadow-2xl bg-[#939393] w-16 aspect-square"></div>
+        <div class="rounded-full shadow-2xl bg-black w-16 aspect-square"></div>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-lg mx-auto px-4 flex flex-col">
+    <div class="flex flex-col text-center">
+      <h2 class="text-3xl not-italic mt-4">Глава 3: <br> И там я был, и мёд я пил</h2>
+      <div class="grid grid-cols-6 mt-4">
+        <div class="col-span-4">
+          <p class="font-bad-script">
+            ***<br>
+            В день свадьбы нашей, светлый и волшебный,<br>
+            Пусть праздник будет радостным, душевным.<br>
+            Мы приглашаем вас на пир чудесный,<br>
+            Где каждый гость найдет для сердца место.
+          </p>
+        </div>
+        <div class="col-span-2 flex">
+          <img class="m-auto" src="/src/assets/img/blot2.png" alt="">
+        </div>
+      </div>
+      <div class="text-sm pt-16 pb-6">
+        <p>На нашей свадьбе вас ждет кулинарное приключение, где каждый элемент меню был выбран с любовью. Вас будут
+          радовать фруктово-ягодные вазы, тарталетки с ветчинным муссом и утончённые канапе-роллы. Горячие блюда –
+          картофель с беконом, шашлык и стейк лосося – подарят вам незабываемые вкусовые впечатления. Завершат праздник
+          разнообразные десерты и напитки, оставив в памяти только самые сладкие воспоминания.</p>
+      </div>
+      <div class="text-sm">
+        <h3 class="text-neutral-500 mb-6">Выбери несколько вариантов того, что будешь пить:</h3>
+        <form class="grid grid-cols-2" action="/" method="post">
+          <div class="col-span-1 flex flex-col gap-2">
+            <div class="flex items-center">
+              <input class="hidden peer" id="1" name="champagne" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="1">Шампанское</label>
+            </div>
+            <div class="flex items-center">
+              <input class="hidden peer" id="2" name="vodka" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="2">Водка</label>
+            </div>
+            <div class="flex items-center">
+              <input class="hidden peer" id="3" name="white_wine" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="3">Белое вино</label>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-2">
+            <div class="flex items-center">
+              <input class="hidden peer" id="4" name="whiskey" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="4">Виски</label>
+            </div>
+            <div class="flex items-center">
+              <input class="hidden peer" id="5" name="red_wine" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="5">Красное вино</label>
+            </div>
+            <div class="flex items-center">
+              <input class="hidden peer" id="6" name="no_alcohol" type="checkbox">
+              <label
+                class="relative flex h-6 left-8 cursor-pointer select-none before:absolute before:-left-8 before:flex before:h-6 before:aspect-square before:border before:border-black before:justify-center peer-checked:before:content-['X'] before:bg-checkbox"
+                for="6">Не пью алкоголь</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-lg mx-auto px-4 mt-16 mb-8 flex flex-col">
+    <div class="flex flex-col text-center">
+      <h2 class="text-3xl not-italic">Глава 4: Как все будет</h2>
+      <div class="text-sm py-10">
+        <p>
+          Наша свадебная вечеринка будет насыщена яркими моментами и приятными сюрпризами. Мы продумали каждую деталь,
+          оставив место для интриги, чтобы каждый мог наслаждаться вечером, не зная, что будет дальше. Ждите эмоций,
+          радости и неожиданностей на каждом шагу!
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <table class="tracking-widest">
+          <tr>
+            <td class="w-0 pr-4 py-2 border-black border-r-2">16:00</td>
+            <td class="py-2">
+              <div class="flex">
+                <div class="w-5 h-5 mx-4 aspect-square rounded-full bg-[#5C5C5C]"></div>
+                <span>Сбор гостей</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-0 pr-4 py-2 border-black border-r-2">16:30</td>
+            <td class="py-2">
+              <div class="flex">
+                <div class="w-5 h-5 mx-4 aspect-square rounded-full bg-[#7A7A7A]"></div>
+                <span>Церемония регистрации</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-0 pr-4 py-2 border-black border-r-2">17:00</td>
+            <td class="py-2">
+              <div class="flex">
+                <div class="w-5 h-5 mx-4 aspect-square rounded-full bg-[#A1A1A1]"></div>
+                <span>Что-то с чем то</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-0 pr-4 py-2 border-black border-r-2">17:30</td>
+            <td class="py-2">
+              <div class="flex">
+                <div class="w-5 h-5 mx-4 aspect-square rounded-full bg-[#C9C6C6]"></div>
+                <span>Начало банкета</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-0 pr-4 py-2 border-black border-r-2">23:00</td>
+            <td class="py-2">
+              <div class="flex">
+                <div class="w-5 h-5 mx-4 aspect-square rounded-full bg-[#D9D9D9]"></div>
+                <span>Завершение вечера</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-lg mx-auto px-4 flex flex-col pb-8">
+    <h3 class="text-lg uppercase">
+      Фото
+    </h3>
+    <p>Опубликуйте фото дня нашей свадьбы в <a target="_blank" href="https://t.me/+Qz032Wkwk99mMDZi" class="underline">телеграмм
+        группе</a></p>
+  </section>
+  <section class="max-w-lg mx-auto px-4 flex flex-col pb-8">
+    <div class="flex flex-col text-center">
+      <h2 class="text-3xl not-italic mb-10 drop-shadow-xl">Будем рады видеть вас!</h2>
+      <div class="text-sm mb-4">
+        Подтвердить свое присутствие можно нажав на кнопку ниже
+      </div>
+      <div class="text-sm">
+        <button class="border border-black rounded-full text-3xl px-20 py-2 shadow-lg">Я буду!</button>
+      </div>
+    </div>
+  </section>
+{% endblock %}

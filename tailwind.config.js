@@ -3,7 +3,7 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
-		'./src/**/*.{js,ts,twig}',
+		'./src/**/*.{js,ts,twig,html}',
 	],
 	theme: {
 		extend: {

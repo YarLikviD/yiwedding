@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes clothes {
+
+  0%, 100% {
+    background-image: url('/src/assets/img/1.png');
+  }
+
+  25% {
+    background-image: url('/src/assets/img/2.png');
+  }
+
+  50% {
+    background-image: url('/src/assets/img/3.png');
+  }
+
+  75% {
+    background-image: url('/src/assets/img/4.png');
+  }
+}
+
+.clothes-el {
+  background-size: contain;
+  animation: clothes 8s infinite;
+}

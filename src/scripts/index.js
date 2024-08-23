@@ -1,5 +1,6 @@
-import '@/styles/index.scss'
+import '../styles/index.scss'
 import './helpers/focus-visible'
+import JSConfetti from 'js-confetti'
 
 ScrollReveal().reveal('*', {
   // delay: 100,
@@ -8,6 +9,16 @@ ScrollReveal().reveal('*', {
   scale: 0.9,
   easing: 'cubic-bezier(0, 0, 1, 1)',
 })
+
+const jsConfetti = new JSConfetti({
+  canvas: document.getElementById('confetti'),
+})
+
+const iWillComeEl = document.querySelector('#i-will-come')
+
+iWillComeEl.addEventListener('click', () => jsConfetti.addConfetti({
+  emojis: ['🤍', '🖤'],
+}))
 
 // Set the date we're counting down to
 const countDownDate = new Date('Oct 1, 2024 16:00:00').getTime()

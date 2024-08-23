@@ -231,7 +231,7 @@
       </div>
       <div class="text-sm">
         <h3 class="text-neutral-500 mb-6">Выбери несколько вариантов того, что будешь пить:</h3>
-        <form class="grid grid-cols-2" action="/" method="post">
+        <form class="grid grid-cols-2" id="drinks" action="/" method="post">
           <div class="col-span-1 flex flex-col gap-2">
             <div class="flex items-center">
               <input class="hidden peer" id="1" name="champagne" type="checkbox">
@@ -351,8 +351,19 @@
         Подтвердить свое присутствие можно нажав на кнопку ниже
       </div>
       <div class="text-sm">
-        <button class="border border-black rounded-full text-3xl px-20 py-2 shadow-lg">Я буду!</button>
+        <button
+          id="i-will-come"
+          class="border border-black rounded-full text-3xl px-20 py-2 shadow-lg"
+          hx-post="/confirm"
+          hx-include="#drinks"
+        >
+          Я буду!
+        </button>
       </div>
     </div>
   </section>
+  <canvas
+    id="confetti"
+    style="position: fixed;width: 100%;height: 100vh;bottom: 0;left: 0;z-index: 1000;pointer-events: none;">
+  </canvas>
 {% endblock %}
